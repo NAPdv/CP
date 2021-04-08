@@ -41,7 +41,7 @@ ll powm(ll x,ll y,ll m)
 	ll ans=1;
 	ll r=1;
 	/*
-	Basically we r checkimg the set bit.
+	Basically we r checking the set bit.
 	eg:-  
 	 x^7 = x^1 * x^2 ^ x^4 
 	So, if we look at the powers.
