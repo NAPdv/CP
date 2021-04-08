@@ -74,7 +74,7 @@ ll powmr(ll x,ll y,ll m)
 	else
 	{
 		ll t=powmr(x,(y/2),m);
-		return (((t*t)%m)*x%m);
+		return ((((t*t)%m)*x)%m);
 	}
 }
 //Modulo Inverse Function (M is prime)
