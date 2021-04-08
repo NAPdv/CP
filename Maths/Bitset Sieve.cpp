@@ -43,7 +43,7 @@ bitset<N>p;//Using bitset
 //Sieve of Eratosthenes
 void sieve()
 {
-	p.set();//sets all elements as 1
+	p.set();//sets all the elements as 1
 	vector<ll>prime;
 	p[1]=p[0]=0;
 	for(ll i=2;i*i<=N;i++)
