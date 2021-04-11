@@ -36,7 +36,7 @@ using namespace std;
 #define ll long long 
 #define endl '\n' 
 //Return's Next Greater Element/Element's Index 
-vector<ll> ns(vector<ll>&a)
+vector<ll> ng(vector<ll>&a)
 {
 	ll n=a.size();
 	stack<ll>s;
@@ -74,7 +74,7 @@ int main()
 		{
 			cin>>a[i];
 		}
-		a=ns(a);
+		a=ng(a);
 		for(ll i=0;i<n;++i)
 		{
 			cout<<a[i]<<" ";
