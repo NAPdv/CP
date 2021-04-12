@@ -75,8 +75,7 @@ void sieve()
 		{
 			for(ll j=i*i;j<=N;j+=i)
 			{
-				if(p[j])
-					p[j]=0;
+				p[j]=0;
 			}
 		}
 	}
