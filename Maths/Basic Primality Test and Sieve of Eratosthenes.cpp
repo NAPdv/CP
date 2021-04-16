@@ -64,7 +64,7 @@ void sieve()
 		{
 			for(ll j=i*i;j<=N;j+=i)
 			{
-				if(p[j])//if true set fasle
+				if(p[j])//if true set false
 				{
 					p[j]=0;
 				}
