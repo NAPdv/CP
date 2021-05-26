@@ -1,4 +1,4 @@
-// CSES - Repetitions
+// CSES - Missing Number
 /*
 ⣿⣿⣿⣿⣿⣿⡷⣯⢿⣿⣷⣻⢯⣿⡽⣻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠸⣿⣿⣆⠹⣿⣿⢾⣟⣯⣿⣿⣿⣿⣿⣿⣽⣻⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣻⣽⡿⣿⣎⠙⣿⣞⣷⡌⢻⣟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿⣿⡄⠹⣿⣿⡆⠻⣿⣟⣯⡿⣽⡿⣿⣿⣿⣿⣽⡷⣯⣿⣿⣿⣿⣿⣿
@@ -42,23 +42,15 @@ int main()
 	// cin>>t;
 	while(t--)
 	{
-		string s;
-		cin>>s;
-		char c=s[0];
-		ll res=1;
-		ll cc=1;
-		for(ll i=1;i<s.size();++i)
+		ll n;
+		cin>>n;
+		ll s=0;
+		ll a;
+		for(ll i=0;i<n-1;++i)
 		{
-			if(s[i]==c)
-			{
-				cc++;
-				res=max(res,cc);
-			}
-			else{
-				c=s[i];
-				cc=1;
-			}
+			cin>>a;
+			s+=a;
 		}
-		cout<<res<<endl;
+		cout<<(n*(n+1))/2-s;
 	}
 }
