@@ -36,6 +36,7 @@ using namespace std;
 #define ll long long 
 #define endl '\n' 
 
+
 ll const N=1e7+5;
 vector<ll>h(N,0);
 int main()
